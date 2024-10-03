@@ -27,6 +27,7 @@ async function exportHighlights() {
           and: [
             { property: "Title", text: { contains: title } },
             { property: "Highlights", checkbox: { equals: false } },
+            { property: "Status", select: { equals: "Finished" } },
           ],
         },
       });
